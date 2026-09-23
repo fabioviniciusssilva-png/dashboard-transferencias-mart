@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Custos — Transferências CD Mart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <svg class="topbar-logo" viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grupo Moas">
+        <rect x="0" y="0" width="360" height="100" rx="10" fill="#aab8a4"/>
+        <g fill="#2b2f2a">
+          <circle cx="34" cy="30" r="4.5"/>
+          <circle cx="52" cy="30" r="4.5"/>
+          <circle cx="70" cy="30" r="4.5"/>
+          <circle cx="34" cy="50" r="4.5"/>
+          <circle cx="52" cy="50" r="4.5"/>
+          <circle cx="34" cy="70" r="4.5"/>
+        </g>
+        <text x="98" y="60" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="1" fill="#2b2f2a">
+          <tspan font-weight="400">GRUPO</tspan><tspan font-weight="800" dx="6">MOAS</tspan>
+        </text>
+      </svg>
+      <div class="topbar-text">
+        <h1>Dashboard de Custos — Transferências CD Mart</h1>
+        <p class="subtitle">
+          Fonte: aba "RELAÇÃO DE PEDIDOS" · Atualizado automaticamente todos os dias ·
+          <span id="lastUpdated">carregando…</span>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="kpis" class="kpi-grid"></section>
+
+    <section class="panel">
+      <h2>Custos por Dia</h2>
+      <div class="chart-wrap">
+        <canvas id="chartDaily" height="90"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Frete por Palete Enviado (por dia)</h2>
+      <div class="chart-wrap">
+        <canvas id="chartPalete" height="80"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Tabela — Custos por Dia</h2>
+      <div class="table-wrap">
+        <table id="tableDaily">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Nº Viagens</th>
+              <th>Custo Frete (R$)</th>
+              <th>Frete Médio / Viagem (R$)</th>
+              <th>Valor Mercadoria (R$)</th>
+              <th>Custo Total (R$)</th>
+              <th>% Frete / Mercadoria</th>
+              <th>Paletes Enviados</th>
+              <th>Frete por Palete (R$)</th>
+              <th>Variação vs Dia Anterior</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section class="panel">
+        <h2>Custos por Transportadora</h2>
+        <div class="table-wrap">
+          <table id="tableCarriers">
+            <thead>
+              <tr>
+                <th>Transportadora</th>
+                <th>Nº Viagens</th>
+                <th>Custo Frete (R$)</th>
+                <th>Frete Médio / Viagem (R$)</th>
+                <th>% do Frete Total</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Top 15 Produtos por Valor de Mercadoria</h2>
+        <div class="table-wrap">
+          <table id="tableProducts">
+            <thead>
+              <tr>
+                <th>REF</th>
+                <th>Produto</th>
+                <th>Valor Mercadoria (R$)</th>
+                <th>% do Total</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel notes">
+      <h2>Como funciona</h2>
+      <ul>
+        <li>Cada "viagem" é um valor único da coluna CARGA na aba "RELAÇÃO DE PEDIDOS". O frete é lançado uma vez por carga, então é contado uma única vez por viagem (não somado por linha de produto).</li>
+        <li>"Custo Frete por Palete" = Frete do dia ÷ Paletes enviados no dia — mostra se os caminhões saíram cheios ou "quase vazios", independente da distância percorrida.</li>
+        <li>"Variação vs Dia Anterior" compara o frete médio por viagem de cada dia com o dia útil anterior lançado. Verde = caiu (bom), vermelho = subiu.</li>
+        <li>A linha "Sem data registrada (pendente)" mostra viagens com carga/NF já gerados mas ainda sem data de expedição preenchida na planilha.</li>
+        <li>Esta página é gerada automaticamente a partir do arquivo Excel "CONTROLE TRANSFERENCIA CD MART.xlsx" uma vez por dia.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Grupo Moas · Logística · Painel gerado automaticamente
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

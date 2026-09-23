@@ -1,0 +1,347 @@
+{
+  "geradoEm": "2026-09-23T11:30:11.865Z",
+  "kpis": {
+    "totalViagens": 233,
+    "totalFrete": 87412.83000000069,
+    "totalValor": 41259117.800000034,
+    "totalGeral": 41346530.63000003,
+    "freteMedioPorViagem": 375.1623605150244,
+    "pctFreteSobreMercadoria": 0.0021186306121164958,
+    "freteMedioPorPalete": 20.582253355309792
+  },
+  "daily": [
+    {
+      "date": "2026-08-26",
+      "viagens": 3,
+      "frete": 2384,
+      "valor": 156197.91000000003,
+      "paletes": 84,
+      "freteMedioPorViagem": 794.6666666666666,
+      "custoFretePorPalete": 28.38095238095238,
+      "pctFreteMercadoria": 0.015262688213946008,
+      "custoTotal": 158581.91000000003,
+      "variacaoFreteMedio": null
+    },
+    {
+      "date": "2026-08-27",
+      "viagens": 2,
+      "frete": 2384,
+      "valor": 121372.2,
+      "paletes": 56,
+      "freteMedioPorViagem": 1192,
+      "custoFretePorPalete": 42.57142857142857,
+      "pctFreteMercadoria": 0.01964205971383892,
+      "custoTotal": 123756.2,
+      "variacaoFreteMedio": 0.5000000000000001
+    },
+    {
+      "date": "2026-08-28",
+      "viagens": 4,
+      "frete": 2384,
+      "valor": 211735.67000000004,
+      "paletes": 84,
+      "freteMedioPorViagem": 596,
+      "custoFretePorPalete": 28.38095238095238,
+      "pctFreteMercadoria": 0.011259321587146839,
+      "custoTotal": 214119.67000000004,
+      "variacaoFreteMedio": -0.5
+    },
+    {
+      "date": "2026-09-01",
+      "viagens": 4,
+      "frete": 2384,
+      "valor": 228974.59000000003,
+      "paletes": 88,
+      "freteMedioPorViagem": 596,
+      "custoFretePorPalete": 27.09090909090909,
+      "pctFreteMercadoria": 0.010411635631709177,
+      "custoTotal": 231358.59000000003,
+      "variacaoFreteMedio": 0
+    },
+    {
+      "date": "2026-09-02",
+      "viagens": 5,
+      "frete": 2384.000000000002,
+      "valor": 414469.94999999984,
+      "paletes": 123,
+      "freteMedioPorViagem": 476.80000000000035,
+      "custoFretePorPalete": 19.382113821138226,
+      "pctFreteMercadoria": 0.005751924837976801,
+      "custoTotal": 416853.94999999984,
+      "variacaoFreteMedio": -0.1999999999999994
+    },
+    {
+      "date": "2026-09-03",
+      "viagens": 6,
+      "frete": 3973.0400000000004,
+      "valor": 641869.8300000002,
+      "paletes": 168,
+      "freteMedioPorViagem": 662.1733333333334,
+      "custoFretePorPalete": 23.64904761904762,
+      "pctFreteMercadoria": 0.0061897908490261945,
+      "custoTotal": 645842.8700000002,
+      "variacaoFreteMedio": 0.38878635346756063
+    },
+    {
+      "date": "2026-09-06",
+      "viagens": 9,
+      "frete": 4768.000000000006,
+      "valor": 833791.0499999995,
+      "paletes": 199,
+      "freteMedioPorViagem": 529.7777777777785,
+      "custoFretePorPalete": 23.959798994974907,
+      "pctFreteMercadoria": 0.005718459079166189,
+      "custoTotal": 838559.0499999995,
+      "variacaoFreteMedio": -0.19994093523682854
+    },
+    {
+      "date": "2026-09-07",
+      "viagens": 5,
+      "frete": 2383.999999999996,
+      "valor": 472984.8100000001,
+      "paletes": 116,
+      "freteMedioPorViagem": 476.79999999999916,
+      "custoFretePorPalete": 20.551724137931,
+      "pctFreteMercadoria": 0.005040330999213263,
+      "custoTotal": 475368.8100000001,
+      "variacaoFreteMedio": -0.10000000000000284
+    },
+    {
+      "date": "2026-09-08",
+      "viagens": 1,
+      "frete": 2383.9999999999995,
+      "valor": 114832.98,
+      "paletes": 22,
+      "freteMedioPorViagem": 2383.9999999999995,
+      "custoFretePorPalete": 108.36363636363635,
+      "pctFreteMercadoria": 0.02076058637509886,
+      "custoTotal": 117216.98,
+      "variacaoFreteMedio": 4.000000000000008
+    },
+    {
+      "date": "2026-09-09",
+      "viagens": 11,
+      "frete": 4768.0000000000055,
+      "valor": 856369.8499999999,
+      "paletes": 233,
+      "freteMedioPorViagem": 433.45454545454595,
+      "custoFretePorPalete": 20.463519313304744,
+      "pctFreteMercadoria": 0.005567687839547371,
+      "custoTotal": 861137.8499999999,
+      "variacaoFreteMedio": -0.8181818181818179
+    },
+    {
+      "date": "2026-09-10",
+      "viagens": 11,
+      "frete": 4768.000000000002,
+      "valor": 596781.0000000001,
+      "paletes": 212,
+      "freteMedioPorViagem": 433.4545454545456,
+      "custoFretePorPalete": 22.490566037735856,
+      "pctFreteMercadoria": 0.007989530497787297,
+      "custoTotal": 601549.0000000001,
+      "variacaoFreteMedio": -7.868426268484322e-16
+    },
+    {
+      "date": "2026-09-11",
+      "viagens": 8,
+      "frete": 4767.999999999998,
+      "valor": 762514.6200000001,
+      "paletes": 198,
+      "freteMedioPorViagem": 595.9999999999998,
+      "custoFretePorPalete": 24.080808080808072,
+      "pctFreteMercadoria": 0.006252994860610013,
+      "custoTotal": 767282.6200000001,
+      "variacaoFreteMedio": 0.374999999999999
+    },
+    {
+      "date": "2026-09-14",
+      "viagens": 10,
+      "frete": 4767.999999999999,
+      "valor": 572537.8200000002,
+      "paletes": 195,
+      "freteMedioPorViagem": 476.7999999999999,
+      "custoFretePorPalete": 24.451282051282046,
+      "pctFreteMercadoria": 0.00832783413329795,
+      "custoTotal": 577305.8200000002,
+      "variacaoFreteMedio": -0.19999999999999987
+    },
+    {
+      "date": "2026-09-15",
+      "viagens": 14,
+      "frete": 4768.000000000009,
+      "valor": 1579589.3399999999,
+      "paletes": 303,
+      "freteMedioPorViagem": 340.57142857142924,
+      "custoFretePorPalete": 15.735973597359767,
+      "pctFreteMercadoria": 0.0030185060631011916,
+      "custoTotal": 1584357.3399999999,
+      "variacaoFreteMedio": -0.28571428571428414
+    },
+    {
+      "date": "2026-09-16",
+      "viagens": 10,
+      "frete": 4767.999999999997,
+      "valor": 2135970.4999999995,
+      "paletes": 176,
+      "freteMedioPorViagem": 476.7999999999997,
+      "custoFretePorPalete": 27.090909090909076,
+      "pctFreteMercadoria": 0.0022322405669928484,
+      "custoTotal": 2140738.4999999995,
+      "variacaoFreteMedio": 0.39999999999999647
+    },
+    {
+      "date": "2026-09-17",
+      "viagens": 15,
+      "frete": 4767.789999999993,
+      "valor": 2941986.04,
+      "paletes": 299,
+      "freteMedioPorViagem": 317.85266666666615,
+      "custoFretePorPalete": 15.945785953177234,
+      "pctFreteMercadoria": 0.0016206025233212842,
+      "custoTotal": 2946753.83,
+      "variacaoFreteMedio": -0.33336269574944144
+    },
+    {
+      "date": "2026-09-18",
+      "viagens": 18,
+      "frete": 7152.000000000001,
+      "valor": 8675060.630000003,
+      "paletes": 378,
+      "freteMedioPorViagem": 397.33333333333337,
+      "custoFretePorPalete": 18.920634920634924,
+      "pctFreteMercadoria": 0.0008244322783482377,
+      "custoTotal": 8682212.630000003,
+      "variacaoFreteMedio": 0.2500550569551113
+    },
+    {
+      "date": "2026-09-20",
+      "viagens": 14,
+      "frete": 4768.00000000002,
+      "valor": 2226402.27,
+      "paletes": 277,
+      "freteMedioPorViagem": 340.57142857143,
+      "custoFretePorPalete": 17.212996389891767,
+      "pctFreteMercadoria": 0.0021415716576681444,
+      "custoTotal": 2231170.27,
+      "variacaoFreteMedio": -0.1428571428571394
+    },
+    {
+      "date": "2026-09-21",
+      "viagens": 25,
+      "frete": 7152.000000000042,
+      "valor": 4023774.6999999993,
+      "paletes": 513,
+      "freteMedioPorViagem": 286.0800000000017,
+      "custoFretePorPalete": 13.94152046783634,
+      "pctFreteMercadoria": 0.0017774355010483174,
+      "custoTotal": 4030926.6999999993,
+      "variacaoFreteMedio": -0.1599999999999985
+    },
+    {
+      "date": "2026-09-22",
+      "viagens": 42,
+      "frete": 9535.99999999999,
+      "valor": 9872627.58999999,
+      "paletes": 523,
+      "freteMedioPorViagem": 227.04761904761884,
+      "custoFretePorPalete": 18.233269598470347,
+      "pctFreteMercadoria": 0.0009659029385104154,
+      "custoTotal": 9882163.58999999,
+      "variacaoFreteMedio": -0.20634920634921178
+    }
+  ],
+  "noDate": {
+    "viagens": 16,
+    "frete": 0,
+    "valor": 3819274.449999999,
+    "paletes": 0
+  },
+  "carriers": [
+    {
+      "transportadora": "PH TRANSPORTES",
+      "viagens": 233,
+      "frete": 87412.83000000069,
+      "freteMedioPorViagem": 375.1623605150244,
+      "pctDoFreteTotal": 1
+    }
+  ],
+  "products": [
+    {
+      "ref": "24009",
+      "produto": "VARETAS EM RATTAN - 5 PCS",
+      "valor": 5203913.6
+    },
+    {
+      "ref": "24008",
+      "produto": "TAMPA EM ALUMINIO",
+      "valor": 1074240
+    },
+    {
+      "ref": "23573",
+      "produto": "COPO PARA VELA EM VIDRO",
+      "valor": 889020.4
+    },
+    {
+      "ref": "24002",
+      "produto": "FRASCO DIFUSOR EM VIDRO 200ML",
+      "valor": 693536.3999999999
+    },
+    {
+      "ref": "23528",
+      "produto": "KIT BAUS EM FIBRA NATURAL - 2 PCS",
+      "valor": 206982
+    },
+    {
+      "ref": "24010",
+      "produto": "FRASCO EM VIDRO",
+      "valor": 196962.84000000003
+    },
+    {
+      "ref": "23735",
+      "produto": "PORTA-RETRATO EM MADEIRA E VIDRO - 10X15",
+      "valor": 189054.24
+    },
+    {
+      "ref": "23520",
+      "produto": "KIT VASOS EM CERAMICA - 3 PCS",
+      "valor": 155960.99999999997
+    },
+    {
+      "ref": "23114",
+      "produto": "JOGO 2 PCS - TACAS PARA GIN EM MARMORE VERDE E CRISTAL - 640 ML",
+      "valor": 150424.56
+    },
+    {
+      "ref": "23113",
+      "produto": "JOGO 2 PCS - TACAS PARA VNHO EM MARMORE VERDE E CRISTAL - 520 ML",
+      "valor": 148395.6
+    },
+    {
+      "ref": "23427",
+      "produto": "KIT VASOS EM CERAMICA - 3 PCS",
+      "valor": 132366.9
+    },
+    {
+      "ref": "23777",
+      "produto": "QUADRO EM MADEIRA E CANVAS",
+      "valor": 127176
+    },
+    {
+      "ref": "23739",
+      "produto": "PORTA-RETRATO EM MADEIRA E VIDRO 2 EM 1",
+      "valor": 126900
+    },
+    {
+      "ref": "23112",
+      "produto": "JOGO 2 PCS - TACAS PARA ESPUMANTE EM MARMORE VERDE E CRISTAL - 210 ML",
+      "valor": 122313.6
+    },
+    {
+      "ref": "23435",
+      "produto": "VASO EM CERAMICA",
+      "valor": 120862.8
+    }
+  ],
+  "totalProdutosDistintos": 1381
+}

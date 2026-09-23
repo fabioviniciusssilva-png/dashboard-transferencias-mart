@@ -1,0 +1,16 @@
+# Local Netlify folder
+.netlify
+
+# Tokens de acesso - nunca versionar
+.env
+.git-credentials
+
+# Dependencias
+node_modules
+
+# Artefatos locais (gerados pelos scripts, nao precisam ir pro repo)
+dist
+
+# Logs locais
+deploy.log
+netlify-deploy-last.log
