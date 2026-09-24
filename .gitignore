@@ -14,3 +14,4 @@ dist
 # Logs locais
 deploy.log
 netlify-deploy-last.log
+git-last.log
