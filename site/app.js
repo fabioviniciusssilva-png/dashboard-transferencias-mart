@@ -15,6 +15,65 @@ function kpiCard(label, value) {
   return div;
 }
 
+function heroStat(label, value) {
+  const div = document.createElement('div');
+  div.className = 'hero-stat';
+  div.innerHTML = `<div class="hero-stat-label">${label}</div><div class="hero-stat-value">${value}</div>`;
+  return div;
+}
+
+function polarPoint(cx, cy, r, angleDeg) {
+  const rad = (angleDeg * Math.PI) / 180;
+  return { x: cx + r * Math.cos(rad), y: cy - r * Math.sin(rad) };
+}
+
+function arcPath(cx, cy, r, fromDeg, toDeg) {
+  const p1 = polarPoint(cx, cy, r, fromDeg);
+  const p2 = polarPoint(cx, cy, r, toDeg);
+  const largeArc = Math.abs(fromDeg - toDeg) > 180 ? 1 : 0;
+  return `M ${p1.x} ${p1.y} A ${r} ${r} 0 ${largeArc} 0 ${p2.x} ${p2.y}`;
+}
+
+// Velocímetro de "% Frete sobre Mercadoria" - a escala é calculada a partir
+// do próprio histórico de dados (maior valor diário já visto), não é um
+// benchmark externo do setor.
+function buildGaugeSvg(value, historicalMax) {
+  const scaleMax = Math.max(historicalMax * 1.15, 0.01);
+  const frac = Math.min(Math.max(value / scaleMax, 0), 1);
+  const cx = 100, cy = 104, r = 82, sw = 16;
+
+  const zoneStops = [0, 1 / 3, 2 / 3, 1].map(f => 180 - f * 180);
+  const zoneColors = ['var(--good)', 'var(--warn)', 'var(--bad)'];
+  const zones = zoneColors.map((color, i) =>
+    `<path d="${arcPath(cx, cy, r, zoneStops[i], zoneStops[i + 1])}" stroke="${color}" stroke-width="${sw}" fill="none" stroke-linecap="butt" opacity="0.85"/>`
+  ).join('');
+
+  const needleAngle = 180 - frac * 180;
+  const tip = polarPoint(cx, cy, r - sw / 2 - 6, needleAngle);
+  const tail = polarPoint(cx, cy, 14, needleAngle + 180);
+
+  return `
+    <svg viewBox="0 0 200 118" width="200" height="118" role="img" aria-label="Velocímetro de frete sobre mercadoria">
+      ${zones}
+      <line x1="${tail.x}" y1="${tail.y}" x2="${tip.x}" y2="${tip.y}" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="${cx}" cy="${cy}" r="7" fill="var(--ink)"/>
+      <text x="10" y="116" font-size="9" fill="var(--ink-soft)" font-family="var(--font-body)">0%</text>
+      <text x="190" y="116" font-size="9" fill="var(--ink-soft)" font-family="var(--font-body)" text-anchor="end">${PCT1(scaleMax)}</text>
+    </svg>`;
+}
+
+function renderGauge(data) {
+  const el = document.getElementById('gaugeBlock');
+  const value = data.kpis.pctFreteSobreMercadoria;
+  const historicalMax = Math.max(...data.daily.map(d => d.pctFreteMercadoria), value, 0.01);
+  el.innerHTML = `
+    <div class="gauge-title">% Frete sobre Mercadoria</div>
+    ${buildGaugeSvg(value, historicalMax)}
+    <div class="gauge-value">${PCT(value)}</div>
+    <div class="gauge-caption">Frete total dividido pelo valor total de mercadoria transferida. Escala ajustada ao maior valor diário já registrado — quanto mais à esquerda, mais eficiente.</div>
+  `;
+}
+
 function trendCell(v) {
   if (v === null || v === undefined) return '<span class="trend-na">—</span>';
   const cls = v > 0 ? 'trend-up' : (v < 0 ? 'trend-down' : '');
@@ -29,16 +88,15 @@ async function loadData() {
   return res.json();
 }
 
-function renderKpis(data) {
-  const el = document.getElementById('kpis');
+function renderHeroStats(data) {
+  const el = document.getElementById('heroStats');
   el.innerHTML = '';
-  el.appendChild(kpiCard('Total de Viagens', INT.format(data.kpis.totalViagens)));
-  el.appendChild(kpiCard('Custo Total de Frete', BRL.format(data.kpis.totalFrete)));
-  el.appendChild(kpiCard('Custo Total de Mercadoria', BRL.format(data.kpis.totalValor)));
-  el.appendChild(kpiCard('Custo Total Geral', BRL.format(data.kpis.totalGeral)));
-  el.appendChild(kpiCard('Frete Médio por Viagem', BRL.format(data.kpis.freteMedioPorViagem)));
-  el.appendChild(kpiCard('% Frete sobre Mercadoria', PCT(data.kpis.pctFreteSobreMercadoria)));
-  el.appendChild(kpiCard('Frete por Palete Enviado', BRL.format(data.kpis.freteMedioPorPalete)));
+  el.appendChild(heroStat('Total de Viagens', INT.format(data.kpis.totalViagens)));
+  el.appendChild(heroStat('Custo Total de Frete', BRL.format(data.kpis.totalFrete)));
+  el.appendChild(heroStat('Custo Total de Mercadoria', BRL.format(data.kpis.totalValor)));
+  el.appendChild(heroStat('Custo Total Geral', BRL.format(data.kpis.totalGeral)));
+  el.appendChild(heroStat('Frete Médio por Viagem', BRL.format(data.kpis.freteMedioPorViagem)));
+  el.appendChild(heroStat('Frete por Palete Enviado', BRL.format(data.kpis.freteMedioPorPalete)));
 }
 
 function renderDailyTable(data) {
@@ -196,7 +254,8 @@ async function init() {
     const data = await loadData();
     document.getElementById('lastUpdated').textContent =
       'Dados gerados em ' + new Date(data.geradoEm).toLocaleString('pt-BR');
-    renderKpis(data);
+    renderGauge(data);
+    renderHeroStats(data);
     renderDailyTable(data);
     renderCarriersTable(data);
     renderProductsTable(data);

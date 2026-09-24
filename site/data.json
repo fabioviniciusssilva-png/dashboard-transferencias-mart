@@ -1,12 +1,12 @@
 {
-  "geradoEm": "2026-09-24T11:30:11.053Z",
+  "geradoEm": "2026-09-24T19:11:52.889Z",
   "kpis": {
-    "totalViagens": 258,
+    "totalViagens": 260,
     "totalFrete": 87412.83000000069,
-    "totalValor": 52702257.30000007,
-    "totalGeral": 52789670.13000007,
-    "freteMedioPorViagem": 338.80941860465384,
-    "pctFreteSobreMercadoria": 0.0016586164327348568,
+    "totalValor": 53244765.860000044,
+    "totalGeral": 53332178.69000004,
+    "freteMedioPorViagem": 336.20319230769496,
+    "pctFreteSobreMercadoria": 0.001641716863397258,
     "freteMedioPorPalete": 20.582253355309792
   },
   "daily": [
@@ -261,12 +261,24 @@
       "pctFreteMercadoria": 0,
       "custoTotal": 8542850.769999994,
       "variacaoFreteMedio": -1
+    },
+    {
+      "date": "2026-09-24",
+      "viagens": 3,
+      "frete": 0,
+      "valor": 960105.66,
+      "paletes": 0,
+      "freteMedioPorViagem": 0,
+      "custoFretePorPalete": 0,
+      "pctFreteMercadoria": 0,
+      "custoTotal": 960105.66,
+      "variacaoFreteMedio": null
     }
   ],
   "noDate": {
-    "viagens": 10,
+    "viagens": 9,
     "frete": 0,
-    "valor": 7078774.619999998,
+    "valor": 6661177.519999999,
     "paletes": 0
   },
   "carriers": [
@@ -314,7 +326,7 @@
     {
       "ref": "22695",
       "produto": "XADREZ DECORATIVO EM MADEIRA",
-      "valor": 209442.4
+      "valor": 211061.8
     },
     {
       "ref": "23528",
@@ -362,5 +374,5 @@
       "valor": 144438.3
     }
   ],
-  "totalProdutosDistintos": 1581
+  "totalProdutosDistintos": 1609
 }
