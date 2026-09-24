@@ -128,8 +128,8 @@ h1, h2, h3, .kpi-value, .gauge-value {
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px 20px;
   align-content: center;
 }
 .hero-stat {
@@ -146,12 +146,11 @@ h1, h2, h3, .kpi-value, .gauge-value {
   margin-bottom: 4px;
 }
 .hero-stat-value {
-  font-size: clamp(15px, 1.6vw, 20px);
+  font-size: clamp(14px, 1.3vw, 19px);
   font-weight: 800;
   color: var(--brand-800);
   line-height: 1.2;
-  white-space: normal;
-  overflow-wrap: break-word;
+  white-space: nowrap;
 }
 
 /* ---------- KPI grid ---------- */
