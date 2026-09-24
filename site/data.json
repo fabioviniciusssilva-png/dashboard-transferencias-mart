@@ -1,12 +1,12 @@
 {
-  "geradoEm": "2026-09-23T19:30:10.040Z",
+  "geradoEm": "2026-09-24T11:30:11.053Z",
   "kpis": {
-    "totalViagens": 233,
+    "totalViagens": 258,
     "totalFrete": 87412.83000000069,
-    "totalValor": 41259117.800000034,
-    "totalGeral": 41346530.63000003,
-    "freteMedioPorViagem": 375.1623605150244,
-    "pctFreteSobreMercadoria": 0.0021186306121164958,
+    "totalValor": 52702257.30000007,
+    "totalGeral": 52789670.13000007,
+    "freteMedioPorViagem": 338.80941860465384,
+    "pctFreteSobreMercadoria": 0.0016586164327348568,
     "freteMedioPorPalete": 20.582253355309792
   },
   "daily": [
@@ -240,30 +240,49 @@
     },
     {
       "date": "2026-09-22",
-      "viagens": 42,
+      "viagens": 40,
       "frete": 9535.99999999999,
-      "valor": 9872627.58999999,
+      "valor": 9513416.149999993,
       "paletes": 523,
-      "freteMedioPorViagem": 227.04761904761884,
+      "freteMedioPorViagem": 238.39999999999978,
       "custoFretePorPalete": 18.233269598470347,
-      "pctFreteMercadoria": 0.0009659029385104154,
-      "custoTotal": 9882163.58999999,
-      "variacaoFreteMedio": -0.20634920634921178
+      "pctFreteMercadoria": 0.001002373894891584,
+      "custoTotal": 9522952.149999993,
+      "variacaoFreteMedio": -0.16666666666667238
+    },
+    {
+      "date": "2026-09-23",
+      "viagens": 33,
+      "frete": 0,
+      "valor": 8542850.769999994,
+      "paletes": 0,
+      "freteMedioPorViagem": 0,
+      "custoFretePorPalete": 0,
+      "pctFreteMercadoria": 0,
+      "custoTotal": 8542850.769999994,
+      "variacaoFreteMedio": -1
     }
   ],
   "noDate": {
-    "viagens": 16,
+    "viagens": 10,
     "frete": 0,
-    "valor": 3819274.449999999,
+    "valor": 7078774.619999998,
     "paletes": 0
   },
   "carriers": [
     {
       "transportadora": "PH TRANSPORTES",
-      "viagens": 233,
+      "viagens": 251,
       "frete": 87412.83000000069,
-      "freteMedioPorViagem": 375.1623605150244,
+      "freteMedioPorViagem": 348.2582868525924,
       "pctDoFreteTotal": 1
+    },
+    {
+      "transportadora": "EDMILSON / GUILHERME",
+      "viagens": 1,
+      "frete": 0,
+      "freteMedioPorViagem": 0,
+      "pctDoFreteTotal": 0
     }
   ],
   "products": [
@@ -288,6 +307,16 @@
       "valor": 693536.3999999999
     },
     {
+      "ref": "22655",
+      "produto": "CENTRO DE MESA EM VIDRO",
+      "valor": 282168.72
+    },
+    {
+      "ref": "22695",
+      "produto": "XADREZ DECORATIVO EM MADEIRA",
+      "valor": 209442.4
+    },
+    {
       "ref": "23528",
       "produto": "KIT BAUS EM FIBRA NATURAL - 2 PCS",
       "valor": 206982
@@ -301,6 +330,16 @@
       "ref": "23735",
       "produto": "PORTA-RETRATO EM MADEIRA E VIDRO - 10X15",
       "valor": 189054.24
+    },
+    {
+      "ref": "23876",
+      "produto": "LUMINARIA EM MADEIRA E LINHO",
+      "valor": 166481.5
+    },
+    {
+      "ref": "24089",
+      "produto": "VASO EM CERAMICA",
+      "valor": 163706.4
     },
     {
       "ref": "23520",
@@ -318,30 +357,10 @@
       "valor": 148395.6
     },
     {
-      "ref": "23427",
-      "produto": "KIT VASOS EM CERAMICA - 3 PCS",
-      "valor": 132366.9
-    },
-    {
-      "ref": "23777",
-      "produto": "QUADRO EM MADEIRA E CANVAS",
-      "valor": 127176
-    },
-    {
-      "ref": "23739",
-      "produto": "PORTA-RETRATO EM MADEIRA E VIDRO 2 EM 1",
-      "valor": 126900
-    },
-    {
-      "ref": "23112",
-      "produto": "JOGO 2 PCS - TACAS PARA ESPUMANTE EM MARMORE VERDE E CRISTAL - 210 ML",
-      "valor": 122313.6
-    },
-    {
-      "ref": "23435",
+      "ref": "24030",
       "produto": "VASO EM CERAMICA",
-      "valor": 120862.8
+      "valor": 144438.3
     }
   ],
-  "totalProdutosDistintos": 1381
+  "totalProdutosDistintos": 1581
 }
