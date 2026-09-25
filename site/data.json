@@ -1,13 +1,13 @@
 {
-  "geradoEm": "2026-09-24T20:03:39.858Z",
+  "geradoEm": "2026-09-25T11:30:10.831Z",
   "kpis": {
-    "totalViagens": 260,
-    "totalFrete": 87412.83000000069,
-    "totalValor": 53244765.860000044,
-    "totalGeral": 53332178.69000004,
-    "freteMedioPorViagem": 336.20319230769496,
-    "pctFreteSobreMercadoria": 0.001641716863397258,
-    "freteMedioPorPalete": 20.582253355309792
+    "totalViagens": 272,
+    "totalFrete": 105847.35999999891,
+    "totalValor": 55609361.7600001,
+    "totalGeral": 55715209.1200001,
+    "freteMedioPorViagem": 389.14470588234894,
+    "pctFreteSobreMercadoria": 0.0019034090061457076,
+    "freteMedioPorPalete": 24.92285377913796
   },
   "daily": [
     {
@@ -241,57 +241,64 @@
     {
       "date": "2026-09-22",
       "viagens": 40,
-      "frete": 9535.99999999999,
-      "valor": 9513416.149999993,
+      "frete": 11443.200000000106,
+      "valor": 9523798.309999993,
       "paletes": 523,
-      "freteMedioPorViagem": 238.39999999999978,
-      "custoFretePorPalete": 18.233269598470347,
-      "pctFreteMercadoria": 0.001002373894891584,
-      "custoTotal": 9522952.149999993,
-      "variacaoFreteMedio": -0.16666666666667238
+      "freteMedioPorViagem": 286.08000000000266,
+      "custoFretePorPalete": 21.879923518164638,
+      "pctFreteMercadoria": 0.001201537414750241,
+      "custoTotal": 9535241.509999992,
+      "variacaoFreteMedio": 3.3778597617230514e-15
     },
     {
       "date": "2026-09-23",
-      "viagens": 33,
-      "frete": 0,
-      "valor": 8542850.769999994,
+      "viagens": 35,
+      "frete": 11443.200000000004,
+      "valor": 9230754.139999997,
       "paletes": 0,
-      "freteMedioPorViagem": 0,
+      "freteMedioPorViagem": 326.94857142857154,
       "custoFretePorPalete": 0,
-      "pctFreteMercadoria": 0,
-      "custoTotal": 8542850.769999994,
-      "variacaoFreteMedio": -1
+      "pctFreteMercadoria": 0.0012396820266735008,
+      "custoTotal": 9242197.339999996,
+      "variacaoFreteMedio": 0.14285714285713264
     },
     {
       "date": "2026-09-24",
-      "viagens": 3,
-      "frete": 0,
-      "valor": 960105.66,
+      "viagens": 8,
+      "frete": 5084.130000000042,
+      "valor": 1664878.2799999993,
       "paletes": 0,
-      "freteMedioPorViagem": 0,
+      "freteMedioPorViagem": 635.5162500000052,
       "custoFretePorPalete": 0,
-      "pctFreteMercadoria": 0,
-      "custoTotal": 960105.66,
-      "variacaoFreteMedio": null
+      "pctFreteMercadoria": 0.003053754776595466,
+      "custoTotal": 1669962.4099999995,
+      "variacaoFreteMedio": 0.9437804766149482
     }
   ],
   "noDate": {
-    "viagens": 9,
+    "viagens": 14,
     "frete": 0,
-    "valor": 6661177.519999999,
+    "valor": 7622715.269999997,
     "paletes": 0
   },
   "carriers": [
     {
       "transportadora": "PH TRANSPORTES",
-      "viagens": 251,
-      "frete": 87412.83000000069,
-      "freteMedioPorViagem": 348.2582868525924,
+      "viagens": 258,
+      "frete": 105847.35999999891,
+      "freteMedioPorViagem": 410.2610852713136,
       "pctDoFreteTotal": 1
     },
     {
       "transportadora": "EDMILSON / GUILHERME",
       "viagens": 1,
+      "frete": 0,
+      "freteMedioPorViagem": 0,
+      "pctDoFreteTotal": 0
+    },
+    {
+      "transportadora": "OLIMPIA",
+      "viagens": 7,
       "frete": 0,
       "freteMedioPorViagem": 0,
       "pctDoFreteTotal": 0
@@ -341,7 +348,7 @@
     {
       "ref": "23735",
       "produto": "PORTA-RETRATO EM MADEIRA E VIDRO - 10X15",
-      "valor": 189054.24
+      "valor": 189181.44
     },
     {
       "ref": "23876",
@@ -374,5 +381,5 @@
       "valor": 144438.3
     }
   ],
-  "totalProdutosDistintos": 1609
+  "totalProdutosDistintos": 1836
 }
