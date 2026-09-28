@@ -1,13 +1,13 @@
 {
-  "geradoEm": "2026-09-25T11:30:10.831Z",
+  "geradoEm": "2026-09-28T11:30:14.373Z",
   "kpis": {
-    "totalViagens": 272,
-    "totalFrete": 105847.35999999891,
-    "totalValor": 55609361.7600001,
-    "totalGeral": 55715209.1200001,
-    "freteMedioPorViagem": 389.14470588234894,
-    "pctFreteSobreMercadoria": 0.0019034090061457076,
-    "freteMedioPorPalete": 24.92285377913796
+    "totalViagens": 294,
+    "totalFrete": 116336.95999999596,
+    "totalValor": 59311258.03000008,
+    "totalGeral": 59427594.99000008,
+    "freteMedioPorViagem": 395.70394557821754,
+    "pctFreteSobreMercadoria": 0.001961465055102218,
+    "freteMedioPorPalete": 27.392738403578047
   },
   "daily": [
     {
@@ -273,20 +273,44 @@
       "pctFreteMercadoria": 0.003053754776595466,
       "custoTotal": 1669962.4099999995,
       "variacaoFreteMedio": 0.9437804766149482
+    },
+    {
+      "date": "2026-09-25",
+      "viagens": 20,
+      "frete": 5721.599999999984,
+      "valor": 3187829.7699999954,
+      "paletes": 0,
+      "freteMedioPorViagem": 286.0799999999992,
+      "custoFretePorPalete": 0,
+      "pctFreteMercadoria": 0.0017948260769269347,
+      "custoTotal": 3193551.3699999955,
+      "variacaoFreteMedio": -0.5498462863852862
+    },
+    {
+      "date": "2026-09-26",
+      "viagens": 11,
+      "frete": 4768.000000000003,
+      "valor": 2810181.28,
+      "paletes": 0,
+      "freteMedioPorViagem": 433.4545454545457,
+      "custoFretePorPalete": 0,
+      "pctFreteMercadoria": 0.0016966876955354293,
+      "custoTotal": 2814949.28,
+      "variacaoFreteMedio": 0.5151515151515204
     }
   ],
   "noDate": {
-    "viagens": 14,
+    "viagens": 5,
     "frete": 0,
-    "valor": 7622715.269999997,
+    "valor": 5326600.490000001,
     "paletes": 0
   },
   "carriers": [
     {
       "transportadora": "PH TRANSPORTES",
-      "viagens": 258,
-      "frete": 105847.35999999891,
-      "freteMedioPorViagem": 410.2610852713136,
+      "viagens": 290,
+      "frete": 116336.95999999596,
+      "freteMedioPorViagem": 401.1619310344688,
       "pctDoFreteTotal": 1
     },
     {
@@ -298,7 +322,7 @@
     },
     {
       "transportadora": "OLIMPIA",
-      "viagens": 7,
+      "viagens": 3,
       "frete": 0,
       "freteMedioPorViagem": 0,
       "pctDoFreteTotal": 0
@@ -328,7 +352,7 @@
     {
       "ref": "22655",
       "produto": "CENTRO DE MESA EM VIDRO",
-      "valor": 282168.72
+      "valor": 284192.49
     },
     {
       "ref": "22695",
@@ -353,7 +377,7 @@
     {
       "ref": "23876",
       "produto": "LUMINARIA EM MADEIRA E LINHO",
-      "valor": 166481.5
+      "valor": 170981
     },
     {
       "ref": "24089",
@@ -368,12 +392,12 @@
     {
       "ref": "23114",
       "produto": "JOGO 2 PCS - TACAS PARA GIN EM MARMORE VERDE E CRISTAL - 640 ML",
-      "valor": 150424.56
+      "valor": 150587.87
     },
     {
       "ref": "23113",
       "produto": "JOGO 2 PCS - TACAS PARA VNHO EM MARMORE VERDE E CRISTAL - 520 ML",
-      "valor": 148395.6
+      "valor": 148823.6
     },
     {
       "ref": "24030",
@@ -381,5 +405,5 @@
       "valor": 144438.3
     }
   ],
-  "totalProdutosDistintos": 1836
+  "totalProdutosDistintos": 2349
 }
