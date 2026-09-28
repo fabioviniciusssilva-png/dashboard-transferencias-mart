@@ -1,13 +1,13 @@
 {
-  "geradoEm": "2026-09-28T11:30:14.373Z",
+  "geradoEm": "2026-09-28T19:30:10.543Z",
   "kpis": {
-    "totalViagens": 294,
-    "totalFrete": 116336.95999999596,
-    "totalValor": 59311258.03000008,
-    "totalGeral": 59427594.99000008,
-    "freteMedioPorViagem": 395.70394557821754,
-    "pctFreteSobreMercadoria": 0.001961465055102218,
-    "freteMedioPorPalete": 27.392738403578047
+    "totalViagens": 295,
+    "totalFrete": 116336.95999999595,
+    "totalValor": 59449693.32000006,
+    "totalGeral": 59566030.28000005,
+    "freteMedioPorViagem": 394.3625762711727,
+    "pctFreteSobreMercadoria": 0.001956897563353079,
+    "freteMedioPorPalete": 27.392738403578043
   },
   "daily": [
     {
@@ -289,28 +289,28 @@
     {
       "date": "2026-09-26",
       "viagens": 11,
-      "frete": 4768.000000000003,
-      "valor": 2810181.28,
+      "frete": 4718.329999999971,
+      "valor": 2943231.61,
       "paletes": 0,
-      "freteMedioPorViagem": 433.4545454545457,
+      "freteMedioPorViagem": 428.93909090908824,
       "custoFretePorPalete": 0,
-      "pctFreteMercadoria": 0.0016966876955354293,
-      "custoTotal": 2814949.28,
-      "variacaoFreteMedio": 0.5151515151515204
+      "pctFreteMercadoria": 0.0016031120296373723,
+      "custoTotal": 2947949.94,
+      "variacaoFreteMedio": 0.49936762761846143
     }
   ],
   "noDate": {
-    "viagens": 5,
-    "frete": 0,
-    "valor": 5326600.490000001,
+    "viagens": 6,
+    "frete": 49.67,
+    "valor": 5331985.45,
     "paletes": 0
   },
   "carriers": [
     {
       "transportadora": "PH TRANSPORTES",
-      "viagens": 290,
-      "frete": 116336.95999999596,
-      "freteMedioPorViagem": 401.1619310344688,
+      "viagens": 291,
+      "frete": 116336.95999999595,
+      "freteMedioPorViagem": 399.78336769758056,
       "pctDoFreteTotal": 1
     },
     {
@@ -405,5 +405,5 @@
       "valor": 144438.3
     }
   ],
-  "totalProdutosDistintos": 2349
+  "totalProdutosDistintos": 2393
 }
